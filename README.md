@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For the API to work we need had install the following
 
-Things you may want to cover:
-
-* Ruby version
-
+* Ruby version 2.3.3
+* Rails version 5.0.6
 * System dependencies
+* Use database PostgreSQL
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+instruction for run project
+1.- rake db:create
+2.- rake db:migrate
+3.- rails server
