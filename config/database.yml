@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  host: ec2-107-21-205-25.compute-1.amazonaws.com
   database: d3cpjllpmnoeh5
   username: vcdpnxrehlvdrd
-  password: <%= ENV['APIRESTFULL_DATABASE_PASSWORD'] %>
+  password: e9198e3a05cd713c34893bd47cbf8487021810755a8e5ae2467a9bf61af033e1
