@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: ApIRestfull_production
-  username: ApIRestfull
+  database: d3cpjllpmnoeh5
+  username: vcdpnxrehlvdrd
   password: <%= ENV['APIRESTFULL_DATABASE_PASSWORD'] %>
