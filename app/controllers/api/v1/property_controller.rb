@@ -54,7 +54,7 @@ before_action :require_propertyAtribute!,except: [:index,:show,:destroy,:new,:ed
         begin
          @property.destroy
 
-          format.json { render json: {message:'La propiedad fue elimina con éxito.'} , status: 400 }
+          format.json { render json: {message:'La propiedad fue elimina con exito.'} , status: 400 }
         rescue
             format.json { render json: @property.errors, status: :unprocessable_entity }
         end
