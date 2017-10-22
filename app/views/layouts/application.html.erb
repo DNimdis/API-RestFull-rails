@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ApIRestfull</title>
+    <title>ServiceMetricas</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poiret+One" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   </head>
+  <style media="screen">
+    nav.navbar {
+      background-color: #1028B1;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    body {
+      background-color: #304FFE;
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+    div {
+      color: white;
+      font-family: 'Poiret One', cursive;
+
+    }
+    .api {
+      font-family: 'Kaushan Script', cursive;
+    }
+    nav ul li span {
+      color: white;
+      font-size: 1.3em;
+    }
+    nav ul li:hover {
+      background-color: #1237FD;
+    }
+
+
+  </style>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="navbar-brand" src="/assets/img/logo1.png" height="50px">
+          <a class="navbar-brand " href="#" style="color: white;">WebServicemasFunsion</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li>
+          <%= link_to root_path do %>
+            <span class="sidebar-title">Inicio</span>
+          <% end %>
+        </li>
+          <li>
+
+          </li>
+        </ul>
+        <div  style="float:right;">
+          <img class="navbar-brand" src="/assets/img/punto.png" width="auto" height="auto">
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <body>
     <%= yield %>
