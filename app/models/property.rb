@@ -2,7 +2,7 @@ class Property < ApplicationRecord
   enum tipo: { house: 0, department: 1}
   validates :title, presence:{message:" no puede estar vacio"}
   validates :address, presence:{ message:" no puede estar vacio"}
-  validates :zicpcode,presence:{ message:" no puede estar vacio"}
+  validates :zipcode,presence:{ message:" no puede estar vacio"}
   validates :country, presence:{ message:" no puede estar vacio"}
 
   validates :title, length: {
@@ -17,15 +17,15 @@ class Property < ApplicationRecord
             too_long:"Debe tener longitud máxima de 140 caracteres",
             too_short:"Debe tener longitud minima de 30 caracteres"
                         }
-validates :zicpcode,format:{
+validates :zipcode,format:{
           with: /\A[+-]?\d+\Z/,
           message:"Sólo se aceptan números"
           }
-validates :zicpcode, length: {
+validates :zipcode, length: {
             is:5,
             message:"Debe tener longitud exacta de 6 caracteres"
           }
-validates :zicpcode, numericality: {
+validates :zipcode, numericality: {
           only_integer: true,
           greater_than_or_equal_to: 10000,
           less_than_or_equal_to: 99999,
